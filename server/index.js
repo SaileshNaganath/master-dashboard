@@ -43,13 +43,14 @@ mongoose.connect(process.env.MONGO_URL,{
 })
 .then(()=>{
     app.listen(PORT , ()=>console.log(`Server Port: ${PORT} `));
-
+/*
     User.insertMany(dataUser);
     Product.insertMany(dataProduct);
     ProductStat.insertMany(dataProductStat);
     Transaction.insertMany(dataTransaction);
     OverallStats.insertMany(dataOverallStat);
     AffiliateStat.insertMany(dataAffiliateStat);
+*/
     
 })
 .catch((err)=>console.log(`${err} did not connect`))
